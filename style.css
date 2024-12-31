@@ -5,7 +5,7 @@
    
 }
 :root{
-    --primarycolor:#8a2be2;
+    --primarycolor: #81a3ca;
     --lightColor:#ffd700;
     --darkColor:rgb(196, 208, 24);
     --primaryLightColor:#d47dff;
@@ -17,12 +17,12 @@ a{
 }
 
 nav{
-    background-color: var(--primarycolor);
+    background-color: #000000	;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 8vh;
-    border: 1px solid var(--darkColor);
+    height: 7vh;
+    border: none;
     position: sticky;
     z-index: 1;
     top: 0;
@@ -259,7 +259,7 @@ input,textarea{
 
 }
 button{
-    background-color: var(--primarycolor);
+    background-color: blueviolet;
     border-radius: .4rem;
     border: none;
     padding: 1rem 1.5rem;
