@@ -81,7 +81,7 @@ nav h1 span{
 
 }
 .hero .right{
-    background-size: cover;
+    
     min-height: 100vh;
     min-width: 50%;
     display: flex;
