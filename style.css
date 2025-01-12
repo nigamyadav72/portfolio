@@ -123,7 +123,7 @@ nav h1 span{
 }
 .hero .right img:hover{
     border: .4rem solid #e73366;
-    box-shadow: 0 0 .4rem #e73366;
+    box-shadow: 0 0 10px #e73366;
 }
 .services{
     min-height: 100vh;
