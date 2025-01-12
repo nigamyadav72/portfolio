@@ -5,7 +5,7 @@
    
 }
 :root{
-    --primarycolor: #81a3ca;
+    --primarycolor: #000;
     --lightColor:#ffd700;
     --darkColor:rgb(196, 208, 24);
     --primaryLightColor:#d47dff;
@@ -68,6 +68,7 @@ nav h1 span{
     height: 92vh;
     display: flex;
     background-color: var(--primarycolor);
+    margin-bottom: -2rem;
 }
 .hero .left{
     height: 100%;
@@ -117,12 +118,12 @@ nav h1 span{
 .hero .right img{
     height: 19rem;
     width: 18rem;
-    border: .3rem solid rgb(121, 91, 91);
+    border: .4rem solid rgb(121, 91, 91);
     border-radius: 54%;
 }
 .hero .right img:hover{
-    border: .3rem solid #ff00d9;
-    box-shadow: 0 0 .3rem #ff00d9;
+    border: .4rem solid #e73366;
+    box-shadow: 0 0 .4rem #e73366;
 }
 .services{
     min-height: 100vh;
@@ -154,7 +155,7 @@ nav h1 span{
 
   }
 .services div{
-    border: 1px solid red;
+    border: none;
     height: 18rem;
     display: flex;
     flex-direction: column;
@@ -164,20 +165,26 @@ nav h1 span{
     line-height: 2rem;
     color: white;
     transition: background-color .6s ease-in-out;
+    padding-top: 2rem;
 
 }
 .services div:hover{
-    background-color: #201ad6;
+    background-color: #5680dd;
     cursor: pointer;
 }
 .services div img{
     height: 6rem;
     width: 6rem;
     border-radius: 50%;
+    
+
+
 
 }
 .services div h3{
     color: var(--lightColor);
+    font-size: 3vw;
+
 }
 .services div p{
     font-size: .8rem;
