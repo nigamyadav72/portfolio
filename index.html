@@ -224,6 +224,7 @@
    
 var app = document.getElementById('typeWriter');
 
+
 var typewriter = new Typewriter(app, {
   loop: true,
   delay: 75,
@@ -231,10 +232,10 @@ var typewriter = new Typewriter(app, {
 
 typewriter
   .pauseFor(2500)
-  .typeString('<h1>I am a Web | App</h1>')
+  .typeString('<span>I am a Web | App</span>')
   .pauseFor(300)
   .deleteChars(10)
-  .typeString('<h1 style="color: #ffd700;">Developer</h1>')
+  .typeString('<span style="color: #ffd700;"> Developer</span>')
   .pauseFor(1000)
   .start();
   </script>
