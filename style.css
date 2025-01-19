@@ -315,9 +315,7 @@ button:hover{
 #projects{
     max-height:max-content;
 }
-.footer{
-    position: absolute;
-}
+
 .footer div{
     min-height:8vh;
     width: 100vw;
