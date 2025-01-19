@@ -10,6 +10,10 @@
     --darkColor:rgb(196, 208, 24);
     --primaryLightColor:#d47dff;
 }
+#main{
+    flex: 1;
+
+}
 
 a{
     text-decoration: none;
@@ -152,6 +156,7 @@ nav h1 span{
     .services p{
         padding: 10px;
     }
+    
 
   }
 .services div{
@@ -225,11 +230,16 @@ nav h1 span{
         padding-top: 0;
         margin: 0;
         
+        
+    }
+    .hero .right img{
+        border: .4rem solid #e73366;
+        box-shadow: 0 0 10px #e73366;
     }
     
     
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 879px) {
     .contact{
       
       flex-direction: column;
@@ -254,6 +264,7 @@ nav h1 span{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    word-wrap: break-word;
 }
 .contact .contactRight{ 
     height: 100%;
@@ -303,4 +314,20 @@ button:hover{
 
 #projects{
     max-height:max-content;
+}
+.footer{
+    position: absolute;
+}
+.footer div{
+    min-height:8vh;
+    width: 100vw;
+    background-color: black;
+    border:none;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+   
 }
