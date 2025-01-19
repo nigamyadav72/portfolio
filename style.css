@@ -98,9 +98,9 @@ nav h1 span{
     font-size: 2rem;
 }
 .socialMedia{
-    max-width: 10rem;
+    width: 10rem;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 
 }
 .socialMedia img{
@@ -110,10 +110,10 @@ nav h1 span{
 }
 .socialMediaNames{
     margin: -0.2rem;
-    max-width: 10rem;
+    width: 10rem;
     display: flex;
-    justify-content:space-evenly;
-    font: size .5rem;
+    justify-content:space-between;
+    font-size: .9rem;
 }
 .hero .right img{
     height: 19rem;
