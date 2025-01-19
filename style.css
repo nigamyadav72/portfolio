@@ -10,10 +10,6 @@
     --darkColor:rgb(196, 208, 24);
     --primaryLightColor:#d47dff;
 }
-#main{
-    flex: 1;
-
-}
 
 a{
     text-decoration: none;
@@ -316,14 +312,16 @@ button:hover{
     max-height:max-content;
 }
 
+
 .footer div{
-    min-height:8vh;
-    width: 100vw;
+    height:7vh;
+    min-width: 100vw;
     background-color: black;
-    border:none;
+    border:1px solid black;
     color: white;
     text-align: center;
     padding: 2rem;
+    padding-top:1rem;
     position: fixed;
     bottom: 0;
     z-index: 1;
