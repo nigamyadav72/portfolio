@@ -7,13 +7,13 @@
 :root{
     --primarycolor: #000;
     --lightColor:#ffd700;
-    --darkColor:rgb(196, 208, 24);
+    --darkColor:red;
     --primaryLightColor:#d47dff;
 }
 
 a{
     text-decoration: none;
-    color: var(--lightColor);
+    color: white;
 }
 
 nav{
@@ -36,26 +36,39 @@ nav ul{
     padding-top: 1rem;
 }
 
-nav ul li{
-    color:var(--lightColor);
-    transition: color .4s ease-out;
+nav ul a {
+    position: relative; /* Required for ::after positioning */
+    text-decoration: none;
+    color: white; /* Use your light color variable */
+    transition: color 0.3s ease; /* Smooth color transition */
 }
 
-nav ul li:hover{
-    cursor: pointer;
-    text-decoration: underline;
-    color: var(--darkColor);
-
+nav ul a::after {
+    content: ""; /* Empty content for the underline */
+    position: absolute; /* Position it relative to the link */
+    left: 0; /* Start from the left */
+    bottom: -2px; /* Slightly below the text */
+    width: 0%; /* Initially hidden */
+    height: 2px; /* Thickness of the underline */
+    background-color: red; /* Use your dark color variable */
+    transition: width 0.4s ease; /* Smooth width animation */
 }
+nav ul a:hover {
+    color: wheat; /* Change the text color on hover */
+}
+nav ul a:hover::after {
+    width: 100%; /* Expand the underline to full width */
+}
+
 nav h1{
     font-size: 2.5rem;
-    color: var(--darkColor);
+    color: wheat;
     padding-left: 5vmin;
     
 }
 nav h1 span{
     font-size: 2.5rem;
-    color: var(--darkColor);
+    color: wheat;
 
 }
 .hamburger{
