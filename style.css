@@ -17,13 +17,15 @@ a{
 }
 
 nav{
-    background-color: #000000	;
+    background-color:#000000	;
+    opacity: 0.89;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 7vh;
     border: none;
     position: sticky;
+    padding:0 1rem;
     z-index: 1;
     top: 0;
 
@@ -34,6 +36,8 @@ nav ul{
     justify-content: space-around;
     font-size: 3vmin;
     padding-top: 1rem;
+    list-style: none;
+    transition: max-height 0.3s ease;
 }
 
 nav ul a {
@@ -72,9 +76,11 @@ nav h1 span{
 
 }
 .hamburger{
-    color: var(--lightColor);
+    color: white;
     font-size: 2.5rem;
     display: none;
+    margin-top: -5px;
+    cursor: pointer;
 }
 .hero{
     
@@ -147,13 +153,27 @@ nav h1 span{
     padding-top: 4rem;
 
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 635px){
     nav .hamburger{
-        display: inline;
+        display: block;
     }
-    nav ul{
-        display: none;
+    nav ul.open {
+        max-height: 200px; /* Adjust based on menu items */
     }
+    nav ul {
+        flex-direction: column;
+        position: absolute;
+        top: 7vh;
+        right: 0;
+        background-color: var(--primarycolor);
+        width: 100%;
+        max-height: 0; /* Hidden by default */
+        overflow: hidden;
+    }
+
+}
+@media only screen and (max-width: 600px) {
+   
     .services{
       
       grid-template-columns: repeat(1,1fr);
@@ -225,15 +245,19 @@ nav h1 span{
 
    
 }
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 635px){
 
     .hero{
+        
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        height: fit-content;
+        min-height:fit-content;
 
+    }
+    .hero .left{
+        height: 40%;
     }
     .hero .right{
         padding-top: 0;
