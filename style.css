@@ -362,5 +362,24 @@ button:hover{
     position: fixed;
     bottom: 0;
     z-index: 1;
+
    
+}
+@media only screen and (max-width:481px){
+    .footer div{
+        font-size: small;
+        word-wrap: none;
+
+
+    }
+}
+@media only screen and (max-width:415px){
+    .footer div{
+        font-size: 10px;
+        word-wrap: none;
+        
+        margin-top: -2px;
+
+
+    }
 }
